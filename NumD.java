@@ -37,7 +37,7 @@ public class NumD {
 				System.out.println(a);
 			}
 			else {
-				System.out.println("The program is strasrting");
+				System.out.println("The program is strasrting"+i);
 			}
 		}
 	}
