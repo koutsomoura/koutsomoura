@@ -21,11 +21,11 @@ public class exercise2 {
 			}
 			
 			int z;
-				do{
-					z=a%b;
-					a=b;
-					b=z;
-				}while (z==0);
+			do{
+				z=a%b;
+				a=b;
+				b=z;
+			}while (z==0);
 			System.out.println(b);
 			
 		}
