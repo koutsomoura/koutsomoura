@@ -12,21 +12,21 @@ public class exercise2 {
 		b=4+(int)(Math.random()*97);
 		if(a!=b){
 
-				if (a<b){
-					int temp;
-					temp=a;
-					a=b;
-					b=temp;
-					System.out.println("a="+a+"  b="+b);
-				}
-			
-		int z;
-		do{
-				z=a%b;
+			if (a<b){
+				int temp;
+				temp=a;
 				a=b;
-				b=z;
-		}while (z==0);
-		System.out.println(b);
+				b=temp;
+				System.out.println("a="+a+"  b="+b);
+			}
+			
+			int z;
+				do{
+					z=a%b;
+					a=b;
+					b=z;
+				}while (z==0);
+			System.out.println(b);
 			
 		}
 		
