@@ -7,14 +7,14 @@ public class Month {
 	 * @param args
 	 */
 	public static void main(String[] args)throws IOException {
-		int x,year,days;
-		BufferedReader month=new BufferedReader(new InputStreamReader(System.in));
+		int month,year,days;
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		
 		System.out.print("Dwse ton aritmo tou mhna: ");
-		x=Integer.parseInt(month.readLine());
+		month=Integer.parseInt(br.readLine());
 		System.out.println();
 		System.out.print("Dwse etos: ");
-		year=Integer.parseInt(month.readLine());
+		year=Integer.parseInt(br.readLine());
 		System.out.println();
 		switch (x){
 		case 1:
@@ -24,13 +24,13 @@ public class Month {
 		case 8:
 		case 10:
 		case 12:
-			x=31;
+			month=31;
 			break;
 		case 4:
 		case 6:
 		case 9:
 		case 11:
-			x=30;
+			month=30;
 			break;
 		}
 		System.out.println("O minas exei "+x+" meres.");
