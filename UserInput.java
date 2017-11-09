@@ -8,12 +8,15 @@ public class UserInput {
 		String name=br.readLine();
 		return name;
 	} 
-	public static double getInteger(){
+	public static int getInteger(){
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		int meresergasias=Integer.parseInt(br.readLine());
-		double hmeromosthio=Double.parseDouble(br.readLine());
-		double yperories=Double.parseDouble(br.readLine());
-		
-		return meresergasias,hmeromosthio,yperories;
+		return meresergasias;
+	}
+	public static double getDouble{
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		double hmeromosthio=Double.parseDouble(br.readLine());		
+		return hmeromosthio;
 	}
 	
 }
