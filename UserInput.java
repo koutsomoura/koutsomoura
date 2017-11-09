@@ -8,12 +8,12 @@ public class UserInput {
 		String name=br.readLine();
 		return name;
 	} 
-	public static int getInteger(){
+	public static int getInteger()throws IOException{
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		int meresergasias=Integer.parseInt(br.readLine());
 		return meresergasias;
 	}
-	public static double getDouble{
+	public static double getDouble()throws IOException{
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		double hmeromosthio=Double.parseDouble(br.readLine());		
 		return hmeromosthio;
