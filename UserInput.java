@@ -5,18 +5,18 @@ public class UserInput {
 
 	public static String getString()throws IOException{
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-		String name=br.readLine();
-		return name;
+		String g=br.readLine();
+		return g;
 	} 
 	public static int getInteger()throws IOException{
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-		int meresergasias=Integer.parseInt(br.readLine());
-		return meresergasias;
+		int y=Integer.parseInt(br.readLine());
+		return y;
 	}
 	public static double getDouble()throws IOException{
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-		double hmeromosthio=Double.parseDouble(br.readLine());		
-		return hmeromosthio;
+		double x=Double.parseDouble(br.readLine());		
+		return x;
 	}
 	
 }
