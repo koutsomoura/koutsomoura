@@ -9,8 +9,8 @@ class askisi5<T>{
 	
 	public static void main(String[] args) {
 			
-		GenericTest1<Integer> i1 = new GenericTest1<Integer>();
-		GenericTest1<String> s1 = new GenericTest1<String>();
+		askisi5<Integer> i1 = new askisi5<Integer>();
+		askisi5<String> s1 = new askisi5<String>();
 		
 		i1.add(new Integer(25));
 		s1.add(new String("Hello Generic Class"));
