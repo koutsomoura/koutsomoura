@@ -16,7 +16,8 @@ public class ASKISI4 {
 			
 			while (e!=-1){
 				result++;
-				e=s.indexOf(s1,sizetos+e);
+				e=s.indexOf(s1,e+1);
+				System.out.println(e);
 			}
 		}
 		int i=result;
