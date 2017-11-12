@@ -21,7 +21,7 @@ public class ASKISI4 {
 			}
 		}
 		int i=result;
-		System.out.println(result);/*den exw apotelesma*/
+		System.out.println(result);
 		
 	
 	}
