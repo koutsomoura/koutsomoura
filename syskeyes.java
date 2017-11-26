@@ -44,9 +44,7 @@ public class syskeyes {
 		return ypokatasthma;
 	}
 	public void setTelikhTimhSyskeyhs(double telikhTimhSyskeyhs){
-		this.telikhTimhSyskeyhs=telikhTimhSyskeyhs;
 		double sinolo=0.0;
-		System.out.println(this.telikhTimhSyskeyhs);
 		if (telikhTimhSyskeyhs<=100){
 			double ektosi=(20/100)*telikhTimhSyskeyhs;
 			sinolo=telikhTimhSyskeyhs-ektosi;
