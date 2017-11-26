@@ -40,7 +40,7 @@ public class syskeyes {
 	public double getArxikhTimhSyskeyhs(){
 		return arxikhTimhSyskeyhs;
 	}
-	public String getYpokatasthma(String ypokatasthma){
+	public String getYpokatasthma(){
 		return ypokatasthma;
 	}
 	public void setTelikhTimhSyskeyhs(double telikhTimhSyskeyhs){
