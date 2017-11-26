@@ -25,18 +25,30 @@ public class syskeyes {
 	public void setArithmosSyskeyhs(int arithmosSyskeyhs){
 		this.arithmosSyskeyhs=arithmosSyskeyhs;
 	}
+	public int getArithmosSyskeyhs(){
+		return arithmosSyskeyhs;
+	}
 	public void setKodikosSyskeyhs(int kodikosSyskeyhs){
 		this.kodikosSyskeyhs=kodikosSyskeyhs;
 	}
+	public int getKodikosSyskeuhs(){
+		return kodikosSyskeyhs;
+	}
 	public void setArxikhTimhSyskeyhs(double arxikhTimhSyskeyhs){
 		this.arxikhTimhSyskeyhs=arxikhTimhSyskeyhs;
+	}
+	public double getArxikhTimhSyskeyhs(){
+		return arxikhTimhSyskeyhs;
 	}
 	public String getYpokatasthma(String ypokatasthma){
 		ypokatasthma=ypokatasthma;
 		return ypokatasthma;
 	}
-	public static void getTelikhTimhSyskeyhs(double syntelestis,double telikhTimhSyskeyhs){
+	public void setTelikhTimhSyskeyhs(int syntelestis,double telikhTimhSyskeyhs){
 		double ektosi=(syntelestis/100)*telikhTimhSyskeyhs;
 		double telikhTimhSyskeys=telikhTimhSyskeyhs*ektosi;
+	}
+	public double getTelikhTimhSyskeuhs(){
+		return telikhTimhSyskeyhs;
 	}
 }
