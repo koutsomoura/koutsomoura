@@ -44,7 +44,7 @@ public class syskeyes {
 		ypokatasthma=ypokatasthma;
 		return ypokatasthma;
 	}
-	public void setTelikhTimhSyskeyhs(int syntelestis,double telikhTimhSyskeyhs){
+	public void setTelikhTimhSyskeyhs(double telikhTimhSyskeyhs){
 		this.telikhTimhSyskeyhs=telikhTimhSyskeyhs;
 		if (telikhTimhSyskeyhs<=100){
 			double ektosi=(20/100)*telikhTimhSyskeyhs;
@@ -58,6 +58,8 @@ public class syskeyes {
 			double ektosi=(50/100)*telikhTimhSyskeyhs;
 			double telikhTimhSyskeys=telikhTimhSyskeyhs*ektosi;
 		}
+		double telikosynolo=telikhTimhSyskeyhs;
+	}
 	public double getTelikhTimhSyskeuhs(){
 		return telikhTimhSyskeyhs;
 	}
