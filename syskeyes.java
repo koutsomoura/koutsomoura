@@ -46,7 +46,8 @@ public class syskeyes {
 	}
 	public void setTelikhTimhSyskeyhs(double telikhTimhSyskeyhs){
 		this.telikhTimhSyskeyhs=telikhTimhSyskeyhs;
-		double sinolo=0;
+		double sinolo=0.0;
+		System.out.println(telikhTimhSyskeyhs);
 		if (telikhTimhSyskeyhs<=100){
 			double ektosi=(20/100)*telikhTimhSyskeyhs;
 			sinolo=telikhTimhSyskeyhs*ektosi;
@@ -59,9 +60,13 @@ public class syskeyes {
 			double ektosi=(50/100)*telikhTimhSyskeyhs;
 			sinolo=telikhTimhSyskeyhs*ektosi;
 		}
-		telikhTimhSyskeyhs=sinolo;
+		this.telikhTimhSyskeyhs=sinolo;
+		System.out.println(telikhTimhSyskeyhs);
+
 	}
 	public double getTelikhTimhSyskeuhs(){
+		System.out.println(telikhTimhSyskeyhs);
+
 		return telikhTimhSyskeyhs;
 	}
 }
