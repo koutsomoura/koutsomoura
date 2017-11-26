@@ -41,27 +41,29 @@ public class syskeyes {
 		return arxikhTimhSyskeyhs;
 	}
 	public String getYpokatasthma(String ypokatasthma){
-		ypokatasthma=ypokatasthma;
 		return ypokatasthma;
 	}
 	public void setTelikhTimhSyskeyhs(double telikhTimhSyskeyhs){
 		this.telikhTimhSyskeyhs=telikhTimhSyskeyhs;
 		double sinolo=0.0;
-		System.out.println(telikhTimhSyskeyhs);
+		System.out.println(this.telikhTimhSyskeyhs);
 		if (telikhTimhSyskeyhs<=100){
 			double ektosi=(20/100)*telikhTimhSyskeyhs;
-			sinolo=telikhTimhSyskeyhs*ektosi;
+			sinolo=telikhTimhSyskeyhs-ektosi;
 		}
 		else if(telikhTimhSyskeyhs>=101&&telikhTimhSyskeyhs<=500){
-			double ektosi=(30/100)*telikhTimhSyskeyhs;
-			sinolo=telikhTimhSyskeyhs*ektosi;
+			double ektosi=telikhTimhSyskeyhs*(30.0/100.0);
+			sinolo=telikhTimhSyskeyhs-ektosi;
+			System.out.println(ektosi);
+
 		}
 		else if (telikhTimhSyskeyhs>500){
 			double ektosi=(50/100)*telikhTimhSyskeyhs;
-			sinolo=telikhTimhSyskeyhs*ektosi;
+			sinolo=telikhTimhSyskeyhs-ektosi;
+			System.out.println(ektosi);
 		}
 		this.telikhTimhSyskeyhs=sinolo;
-		System.out.println(telikhTimhSyskeyhs);
+		System.out.println(this.telikhTimhSyskeyhs);
 
 	}
 	public double getTelikhTimhSyskeuhs(){
