@@ -46,21 +46,22 @@ public class syskeyes {
 	}
 	public void setTelikhTimhSyskeyhs(double telikhTimhSyskeyhs){
 		this.telikhTimhSyskeyhs=telikhTimhSyskeyhs;
+		double sinolo=0;
 		if (telikhTimhSyskeyhs<=100){
 			double ektosi=(20/100)*telikhTimhSyskeyhs;
-			double telikhTimhSyskeys=telikhTimhSyskeyhs*ektosi;
+			sinolo=telikhTimhSyskeyhs*ektosi;
 		}
 		else if(telikhTimhSyskeyhs>=101&&telikhTimhSyskeyhs<=500){
 			double ektosi=(30/100)*telikhTimhSyskeyhs;
-			double telikhTimhSyskeys=telikhTimhSyskeyhs*ektosi;
+			sinolo=telikhTimhSyskeyhs*ektosi;
 		}
 		else if (telikhTimhSyskeyhs>500){
 			double ektosi=(50/100)*telikhTimhSyskeyhs;
-			double telikhTimhSyskeys=telikhTimhSyskeyhs*ektosi;
+			sinolo=telikhTimhSyskeyhs*ektosi;
 		}
-		this.telikhTimhSyskeyhs=telikhTimhSyskeyhs;
+		telikhTimhSyskeyhs=sinolo;
 	}
 	public double getTelikhTimhSyskeuhs(){
-		return telikosynolo;
+		return telikhTimhSyskeyhs;
 	}
 }
