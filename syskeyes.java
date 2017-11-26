@@ -58,9 +58,9 @@ public class syskeyes {
 			double ektosi=(50/100)*telikhTimhSyskeyhs;
 			double telikhTimhSyskeys=telikhTimhSyskeyhs*ektosi;
 		}
-		double telikosynolo=telikhTimhSyskeyhs;
+		this.telikhTimhSyskeyhs=telikhTimhSyskeyhs;
 	}
 	public double getTelikhTimhSyskeuhs(){
-		return telikhTimhSyskeyhs;
+		return telikosynolo;
 	}
 }
