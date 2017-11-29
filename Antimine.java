@@ -14,14 +14,12 @@ public class Antimine {
 		rouxa[1]=new Mine(35.4,19.0,6020);
 		
 		for(int i=0;i<rouxa.length;i++){
+		rouxa[i].getLastcost();
 		System.out.println(rouxa[i]);
 		
-		}		
-		Mine cost[]=new Mine[1];
-		for (int a=0;a<cost.length;a++){
-			rouxa[a]=cost[a].getLastcost();	
-			System.out.println(cost[a]);
 		}
+		
+		
 		
 	}
 

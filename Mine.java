@@ -34,13 +34,13 @@ public class Mine {
 		return firstcost;
 	}
 	
-	public  double getLastcost(){
+	public double getLastcost(){
 		double d=fpa/100.0;
 		lastcost=firstcost+d;
 		return lastcost;
 	}
 	public String toString(){
-		return String.format("%-10s %-10s %-10s",firstcost,fpa,code,lastcost);
+		return String.format("%-10s %-10s %-10s%-10s",firstcost,fpa,code,lastcost);
 	}
 	
 }
