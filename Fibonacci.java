@@ -8,11 +8,11 @@ public class Fibonacci {
 	 */
 	public static void main(String[] args) {
 		
-		classofstaticmethods[] x=new classofstaticmethods[10];
-
+		int[] x=new int[10];
 		
 		for (int i=0;i<10;i++){
-			x[i].fillPinInt();
+			
+			classofstaticmethods.fillPinInt(x);
 
 			System.out.println(x[i]);
 			}

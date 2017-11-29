@@ -2,12 +2,11 @@
 public class classofstaticmethods {
 
 	
-	
 	static int trexonArithmosSyskeyhs=1;
 	
 	
 	
-	public void fillPinInt(int[] a){
+	public static void fillPinInt(int[] a){
 		for (int i=1;i<a.length;i++){
 			a[0]=1;
 			a[i+1]=a[i-1]+a[i];
