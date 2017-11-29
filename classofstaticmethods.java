@@ -7,14 +7,17 @@ public class classofstaticmethods {
 	
 	
 	public static void fillPinInt(int[] a){
-		for (int i=1;i<a.length;i++){
-			a[0]=1;
-			a[i+1]=a[i-1]+a[i];
-			System.out.println(a[i]);
+		
+		for (int i=0;i<a.length;i++){
+		a[-1]=1;
+		a[-2]=0;
+		a[i]=a[i-1]+a[i-2];
 
 		
-			}
+			System.out.println(a[i]);
 		}
+			
+	}
 	 
 	public static double findSynolikoPosoPlhromhs(double telikhTimhSyskeyhs){
 		syskeyes p= new syskeyes();
