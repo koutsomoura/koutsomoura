@@ -19,7 +19,6 @@ public class syskeyes {
 		this.arithmosSyskeyhs=arithmosSyskeyhs;
 		this.arxikhTimhSyskeyhs=arxikhTimhSyskeyhs;
 		this.telikhTimhSyskeyhs=telikhTimhSyskeyhs;
-		
 	}
 	
 	public void setArithmosSyskeyhs(int arithmosSyskeyhs){
