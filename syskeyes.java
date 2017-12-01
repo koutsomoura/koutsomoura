@@ -14,7 +14,7 @@ public class syskeyes {
 		telikhTimhSyskeyhs=0.0;
 		
 	}
-	//Domhths pliris//
+	//Domhths pliris//result
 	public syskeyes(int arithmosSyskeyhs,double arxikhTimhSyskeyhs,double telikhTimhSyskeyhs){
 		this.arithmosSyskeyhs=arithmosSyskeyhs;
 		this.arxikhTimhSyskeyhs=arxikhTimhSyskeyhs;
@@ -51,21 +51,22 @@ public class syskeyes {
 		else if(telikhTimhSyskeyhs>=101&&telikhTimhSyskeyhs<=500){
 			double ektosi=telikhTimhSyskeyhs*(30.0/100.0);
 			sinolo=telikhTimhSyskeyhs-ektosi;
-			System.out.println(ektosi);
 
 		}
 		else if (telikhTimhSyskeyhs>500){
 			double ektosi=(50.0/100.0)*telikhTimhSyskeyhs;
 			sinolo=telikhTimhSyskeyhs-ektosi;
-			System.out.println(ektosi);
 		}
 		this.telikhTimhSyskeyhs=sinolo;
-		System.out.println(this.telikhTimhSyskeyhs);
 
 	}
 	public double getTelikhTimhSyskeuhs(){
 		System.out.println(telikhTimhSyskeyhs);
 
 		return telikhTimhSyskeyhs;
+	}
+	public String toString(){
+		
+		return String.format("%-10s %-10s %-10s",arithmosSyskeyhs,arxikhTimhSyskeyhs,telikhTimhSyskeyhs);
 	}
 }

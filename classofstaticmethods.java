@@ -10,45 +10,38 @@ public class classofstaticmethods {
 		
 			a[i]=a[i-1]+a[i-2];
 		}
-		for (int i=0;i<a.length;i++){
-		System.out.println(a[i]);
-		}
+		
 		
 
 	}
-	int n=trexonArithmosSyskeyhs;
+	static int n=trexonArithmosSyskeyhs;
 
-	public double findSynolikoPosoPlhromhs(double[]a,double telikhTimhSyskeyhs){
-		double []k=new double[n];
-		double result=0;
+	public static double findSynolikoPosoPlhromhs(syskeyes[] a){
 		
-		for (int i=1;i<n;i++){
-			result+=k[i];
-		}
 		
 		double arxikestimes[]=new double[1];
-		System.arraycopy(k,1,arxikestimes,1,1);
 		double result1=0;
 		
-		for(int i=0;i<arxikestimes.length;i++){
-		result1+=result+arxikestimes[i];
+		for(int i=0;i<a.length;i++){
+		System.arraycopy(a,1,arxikestimes, 0, 1);
+		result1+=arxikestimes[i];
 		}
 		
 		double telikestimes[]=new double[1];
-		System.arraycopy(k, 2, telikestimes, 2, 1);
-		double result3=0;
+		double result2=0;
 		
-		for(int i=0;i<telikestimes.length;i++){
-			result+=telikestimes[i];
+		for(int i=0;i<a.length;i++){
+			System.arraycopy(a, 2, telikestimes, 0, 1);
+			result2+=telikestimes[i];
 		}
 		
-		if(n>=1&&result1>2000){
-		double ektosi=result3*(30.0/100.0);
-		result3=result3-ektosi;
+		if(a.length>=1&&result1>2000){
+		double ektosi=result2*(30.0/100.0);
+		result2=result2-ektosi;
 			
 		}	
-		
-		telikhTimhSyskeyhs=result3;
+		double telikhTimhSyskeyhs;
+		telikhTimhSyskeyhs=result2;
 		return telikhTimhSyskeyhs;
 	}
 
