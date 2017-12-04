@@ -9,14 +9,14 @@ public class syskeyes {
 	
 	//Domhths kenos//
 	public syskeyes(){
-		arithmosSyskeyhs=0;
+		arithmosSyskeyhs=classofstaticmethods.trexonArithmosSyskeyhs++;
 		arxikhTimhSyskeyhs=0.0;
 		telikhTimhSyskeyhs=0.0;
 		
 	}
 	//Domhths pliris//result
 	public syskeyes(int arithmosSyskeyhs,double arxikhTimhSyskeyhs,double telikhTimhSyskeyhs){
-		this.arithmosSyskeyhs=arithmosSyskeyhs;
+		this.arithmosSyskeyhs=classofstaticmethods.trexonArithmosSyskeyhs++;
 		this.arxikhTimhSyskeyhs=arxikhTimhSyskeyhs;
 		this.telikhTimhSyskeyhs=telikhTimhSyskeyhs;
 	}
@@ -49,7 +49,7 @@ public class syskeyes {
 			sinolo=telikhTimhSyskeyhs-ektosi;
 		}
 		else if(telikhTimhSyskeyhs>=101&&telikhTimhSyskeyhs<=500){
-			double ektosi=telikhTimhSyskeyhs*(30.0/100.0);
+			double ektosi=(30.0/100.0)*telikhTimhSyskeyhs;
 			sinolo=telikhTimhSyskeyhs-ektosi;
 
 		}
@@ -61,10 +61,9 @@ public class syskeyes {
 
 	}
 	public double getTelikhTimhSyskeuhs(){
-		System.out.println(telikhTimhSyskeyhs);
-
 		return telikhTimhSyskeyhs;
 	}
+	
 	public String toString(){
 		
 		return String.format("%-10s %-10s %-10s",arithmosSyskeyhs,arxikhTimhSyskeyhs,telikhTimhSyskeyhs);
