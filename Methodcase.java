@@ -7,7 +7,7 @@ public class Methodcase {
 	public static void main(String[] args)throws IOException{
 		// TODO Auto-generated method stub
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("Dialexte mia epilogi apo tis 1-5; ");
+		System.out.println("Dialexte mia epilogi apo tis 1-5; ");	
 		
 		int ok=0 ;
 
