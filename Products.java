@@ -61,12 +61,14 @@ public class Products {
 	}
 	public double getSinolo(){
 		
-		lcost=temaxia*lcost;
-		if (temaxia%2==0){
+		if (temaxia!=0){
+			if (temaxia%2==0){
 			double ek=lcost*0.25;
 			lcost=lcost-ek;
+			}else{
+			lcost=temaxia*lcost;
+			}
 		}
-		
 		return lcost;
 	}
 	
