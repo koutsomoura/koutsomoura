@@ -63,16 +63,11 @@ public class Products {
 		double lcost1=0.0;
 		double lcost2=0.0;
 		int d=0;
-				
-		if (temaxia%2==0){
-			 d=temaxia/2;
-			 lcost1=d*lcost*0.50;
-		}
-		if (temaxia%2!=0){
-			int s=temaxia-d;
-			lcost2=d*lcost;
-		}
-		this.lcost=lcost1+lcost2;
+		int a=temaxia/2;
+		lcost1=a*lcost*0.5;
+		double b=temaxia-a;
+		lcost2=b*lcost;
+		lcost=lcost1+lcost2;
 		
 		
 		return lcost;
