@@ -14,14 +14,14 @@ public class Methodofp {
 	}
 	public Methodofp(double fcost,double lcost,int code,int kf,double discount) {
 		this.fcost=fcost;
-		this.lcost=getLcost();
+		setLcost(lcost);
 		this.code=code;
 		this.kf=kf;
 		this.discount=discount;
 	}
 	public Methodofp(double fcost,double lcost,int code,int kf) {
 		this.fcost=fcost;
-		this.lcost=getLcost();
+		setLcost(lcost);
 		this.code=code;
 		this.kf=kf;
 		discount=0.0;
@@ -40,6 +40,7 @@ public class Methodofp {
 	}
 
 	public void setLcost(double lcost) {
+		
 		if (kf==1) {
 			double ek=lcost*0.25;
 			lcost=lcost+ek;
@@ -73,6 +74,6 @@ public class Methodofp {
 		return discount;
 	}
 	public String toString(){
-		return  fcost+"  "+lcost+"  "+code+"  "+kf+"  "+discount;
+		return  kf+"  "+fcost+"  "+lcost+"  "+code+"  "+discount;
 	}
 }
