@@ -1,17 +1,22 @@
-
+import java.io.*;
 public class Userinput {
 	
-	
-	public static int getInt(){
+	static BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+	public static int getInt()throws IOException{
 		try{
-			return;
+			System.out.println("Please input Stringline :");
+			String n=br.readLine();
+			int k=Integer.parseInt(n);
+			return k;
 		}catch(IOException e){
 		
 		}
 	}
-	public static String getString(){
+	public static String getString()throws IOException{
 		try{	
-			return;
+			System.out.println("Please input Stringline :");
+			String n=br.readLine();
+			return n;
 		}catch(IOException e){
 		
 		}
