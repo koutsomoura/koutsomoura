@@ -24,8 +24,16 @@ public class Userinput {
 		return n;
 	}
 	public static String getName(){
-		String o;
-		o=getString();
-		return o;
+	
+		String o="";
+		while(o==""){
+		try{
+			o=getString();
+			return o;
+		}
+		catch(Exception e){
+			
+		}
+		}return o;
 	}
 }
