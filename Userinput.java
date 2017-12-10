@@ -1,15 +1,19 @@
 
 public class Userinput {
 	
-	try{
+	
 	public static int getInt(){
-		return;
+		try{
+			return;
+		}catch(IOException e){
+		
+		}
 	}
 	public static String getString(){
-		return;
-	}
-	}
-	catch(IOException e){
+		try{	
+			return;
+		}catch(IOException e){
 		
+		}
 	}
 }
