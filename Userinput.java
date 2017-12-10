@@ -27,40 +27,30 @@ public class Userinput {
 	
 		String o="";
 		while(o.equals("")){
-		try{
-			o=getString();
-			return o;
+		o=getString();
+		return o;
 		}
-		catch(Exception e){
-			
-		}
-		}return o;
+		return o;
+		
 	}
 	public static String getSurname(){
 		
 		String o="";
 		while(o.equals("")){
-		try{
-			o=getString();
-			return o;
+		o=getString();
+		return o;
 		}
-		catch(Exception e){
-			
-		}
-		}return o;
+		return o;
 	}
-	public static int getNumber(){
-		int o=0;
-		while(o==0){
-			try{
-				o=getInt();
-				return o;
-			}
-			catch(Exception e){
-				
-			}
-			}return o;
+public static String getNumber(){
+		
+		String o="";
+		while(o.equals("")){
+		o=getString();
+		return o;
 		}
+		return o;
+	}
 		
 	
 }
