@@ -26,7 +26,7 @@ public class Userinput {
 	public static String getName(){
 	
 		String o="";
-		while(o==""){
+		while(o.equals("")){
 		try{
 			o=getString();
 			return o;
@@ -36,4 +36,31 @@ public class Userinput {
 		}
 		}return o;
 	}
+	public static String getSurname(){
+		
+		String o="";
+		while(o.equals("")){
+		try{
+			o=getString();
+			return o;
+		}
+		catch(Exception e){
+			
+		}
+		}return o;
+	}
+	public static int getNumber(){
+		int o=0;
+		while(o==0){
+			try{
+				o=getInt();
+				return o;
+			}
+			catch(Exception e){
+				
+			}
+			}return o;
+		}
+		
+	
 }
