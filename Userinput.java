@@ -2,23 +2,27 @@ import java.io.*;
 public class Userinput {
 	
 	static BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-	public static int getInt()throws IOException{
+	public static int getInt(){
+		int k=0;
 		try{
 			System.out.println("Please input Stringline :");
 			String n=br.readLine();
-			int k=Integer.parseInt(n);
+			k=Integer.parseInt(n);
 			return k;
 		}catch(IOException e){
 		
 		}
+		return k;
 	}
-	public static String getString()throws IOException{
+	public static String getString(){
+		String n="";
 		try{	
 			System.out.println("Please input Stringline :");
-			String n=br.readLine();
+			n=br.readLine();
 			return n;
 		}catch(IOException e){
 		
 		}
+		return n;
 	}
 }
