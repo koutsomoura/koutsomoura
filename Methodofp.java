@@ -7,21 +7,21 @@ public class Methodofp {
 
 	public Methodofp() {
 		fcost=0.0;
-		lcost=0.0;
+		setLcost(lcost);
 		code=0;
 		kf=0;
 		discount=0.0;
 	}
 	public Methodofp(double fcost,double lcost,int code,int kf,double discount) {
 		this.fcost=fcost;
-		this.lcost=lcost;
+		this.lcost=getLcost();
 		this.code=code;
 		this.kf=kf;
 		this.discount=discount;
 	}
 	public Methodofp(double fcost,double lcost,int code,int kf) {
 		this.fcost=fcost;
-		this.lcost=lcost;
+		this.lcost=getLcost();
 		this.code=code;
 		this.kf=kf;
 		discount=0.0;
